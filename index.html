@@ -9,17 +9,19 @@
         </h1>
         
         <!-- Till Dropdown Menu -->
-        <div class="till_dropdown_options">
-            <button onclick="tillDrop()" class="tillDropButton">Till Select</button>
-            <div id="tillDropMenu" class="tillOptions">
-                <p>Bowling Till #1</p>
-                <p>Middle Till #2</p>
-                <p>Till #3</p>
-                <p>Bar #1</p>
-                <p>Bar #2</p>
-                <p>Server</p>
-            </div>
-        </div>
+        <form>
+            <b>Select the register you wish to cash out</b>
+            <select id="till_list" onchange="till_selection()">
+                <option>Choose Till</option>
+                <option>Bowling Till #1</option>
+                <option>Middle Till #2</option>
+                <option>Till #3</option>
+                <option>Bar #1</option>
+                <option>Bar #2</option>
+                <option>Server</option>
+            </select>
+            <p><input type="text" id="till_output_box"> selected</p>
+        </form>
         <!-- -->
        
     </body>
