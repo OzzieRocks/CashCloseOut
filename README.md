@@ -1,6 +1,6 @@
 # CashCloseOut
 
-##Files
+## Files
 ```
 index.html
 styles.css
