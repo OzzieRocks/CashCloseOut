@@ -21,11 +21,11 @@ function year_selection() {
 function submit_form() {
     <!-- Verify Submission -->
     <!-- Get all inputs -->
-    var register;
-    var month;
-    var day;
-    var year;
-    var name;
+    var register = documnet.getElementById("till_list");
+    var month = documnet.getElementById("month_list");
+    var day = documnet.getElementById("day_list");
+    var year = documnet.getElementById("year_list");
+    var name = documnet.getElementById("name_input");
     var starting_cash;
     var change;
     var ones;
