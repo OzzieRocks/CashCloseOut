@@ -20,7 +20,20 @@ function year_selection() {
 
 function submit_form() {
     <!-- Verify Submission -->
-    alert("Verify the information before submitting...")
+    <!-- Get all inputs -->
+    var register;
+    var month;
+    var day;
+    var year;
+    var name;
+    var starting_cash;
+    var change;
+    var ones;
+    var fives;
+    var tens;
+    var twenties;
+    var fifties;
+    var hundreds;
     
     
 }
