@@ -26,14 +26,14 @@ function submit_form() {
     var day = documnet.getElementById("day_list");
     var year = documnet.getElementById("year_list");
     var name = documnet.getElementById("name_input");
-    var starting_cash;
-    var change;
-    var ones;
-    var fives;
-    var tens;
-    var twenties;
-    var fifties;
-    var hundreds;
+    var starting_cash = documnet.getElementById("starting_cash_amount_input");
+    var change = documnet.getElementById("change_input");
+    var ones = documnet.getElementById("number_of_1_input");
+    var fives = documnet.getElementById("number_of_5_input");
+    var tens = documnet.getElementById("number_of_10_input");
+    var twenties = documnet.getElementById("number_of_20_input");
+    var fifties = documnet.getElementById("number_of_50_input");
+    var hundreds = documnet.getElementById("number_of_100_input");
     
     
 }
