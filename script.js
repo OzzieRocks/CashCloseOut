@@ -35,5 +35,24 @@ function submit_form() {
     var fifties = document.getElementById("number_of_50_input");
     var hundreds = document.getElementById("number_of_100_input");
     
-    
+    var Excel = require('exceljs');
+    var workbook = new Excel.Workbook();
+    workbook.xlsx.readFile("test.xlsx")
+        .then(function() { 
+            var worksheet = workbook.getWorksheet('Sheet1');
+        worksheet.getCell('A1').value = register;
+        worksheet.getCell('A2').value = month;
+        worksheet.getCell('A3').value = day;
+        worksheet.getCell('A4').value = year;
+        worksheet.getCell('A5').value = name;
+        worksheet.getCell('A6').value = starting_cash;
+        worksheet.getCell('A7').value = change;
+        worksheet.getCell('A8').value = ones;
+        worksheet.getCell('A9').value = fives;
+        worksheet.getCell('A10').value = tens;
+        worksheet.getCell('A11').value = twenties;
+        worksheet.getCell('A12').value = fifties;
+        worksheet.getCell('A13').value = hundreds;
+            return workbook.xlsx.writeFile("test.xlsx");
+    });
 }
