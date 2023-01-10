@@ -37,7 +37,7 @@ function submit_form() {
     
     var Excel = require('exceljs');
     var workbook = new Excel.Workbook();
-    workbook.xlsx.readFile("test.xlsx")
+    workbook.xlsx.readFile("Test.xlsx")
         .then(function() { 
             var worksheet = workbook.getWorksheet('Sheet1');
         worksheet.getCell('A1').value = register;
@@ -53,6 +53,6 @@ function submit_form() {
         worksheet.getCell('A11').value = twenties;
         worksheet.getCell('A12').value = fifties;
         worksheet.getCell('A13').value = hundreds;
-            return workbook.xlsx.writeFile("test.xlsx");
+            return workbook.xlsx.writeFile("Test.xlsx");
     });
 }
